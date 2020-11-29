@@ -1,13 +1,14 @@
-let message;
 const rightPassword = 'Добро пожаловать!';
 const userCancel = 'Отменено пользователем!';
 const wrongPassword = 'Доступ запрещен, неверный пароль!';
 const ADMIN_PASSWORD = prompt('Пожалуйста, введите пароль');
+let message;
 
 if (ADMIN_PASSWORD === 'jqueryismyjam') {
-    alert (rightPassword);
+    message = rightPassword;
 } else if (ADMIN_PASSWORD === null) {
-   alert (userCancel);
+   message = userCancel;
 } else {
-    alert (wrongPassword);
+    message = wrongPassword;
 }
+alert(message);
